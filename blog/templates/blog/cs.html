@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="post">
+    <h1>Cheat Sheet</h1>
+    <p>Here you can find some notes that I did, and I still do, while I study for my projects or just for myself.</p>
+    <ul>
+		<li><a href="{% url 'cs_mis' %}">Management Information System (MIS)</li></a>
+		<li><a href="{% url 'cs_agile' %}">Agile Software Development</li></a>
+		<li><a href="{% url 'cs_tsql' %}">Transact-SQL</li></a>
+		<li><a href="{% url 'cs_ml' %}">Machine Learning</li></a>
+		<li><a href="{% url 'django' %}">Django</li></a>
+	</ul>
+    </div>
+{% endblock %}

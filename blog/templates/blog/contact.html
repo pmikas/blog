@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+	<br>
+    <p>If you have any question or want to give me a feedback or suggestions, feel free to send me a message through the form below. Otherwise you can also send an e-mail to patricia.sakugawa@gmail.com<br>
+    Thanks!</p>
+	<form method="POST" class="post-form">
+	    {% csrf_token %}
+	    {{ form }}
+	    <input type="submit" value="Submit">
+	</form>
+{% endblock %}

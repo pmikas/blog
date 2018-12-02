@@ -1,0 +1,311 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="post">
+<h1>Management Information System (MIS)</h1>
+These notes are highly based on the course <a href="https://courses.edx.org/courses/course-v1:UC3Mx+IM.1x+1T2018/course/">Introduction to Management Information Systems (MIS): A Survival Guide</a> from edX, taught by Professor Alfonso Durán Heras.
+<br><br>
+MISs:<br>
+<ul> 
+	<li>Based on ICT (Information and Communication Tecnologies);</li>
+	<li>Examples: accounting systems, manufacturing planning systems;</li>
+	<li>Predetermined structure and scope of applicability;</li>
+	<li>Its design specifies which data will they use and how it will be processed;</li>
+	<li>Represent the application of ICT based solutions to specific business requirements;</li>
+	<li>There is a certain structure in how they combine and sequence the operations;</li>
+	<li>Support and structure information flows.</li>
+</ul>
+<br>
+The tradicional development methodology "Waterfall" is divided in:
+<ol>
+	<li>Initial analysis</li>
+	<li>Requirements definition</li>
+	<li>Design</li>
+	<li>Development</li>
+	<li>Testing and acceptance</li>
+	<li>Deployment</li>
+</ol>
+* It does not allow adding new functionality at a later stage, and the system should go through each phase once and only once.<br>
+<br>
+Iterative methodologies: "Agile Manifesto"
+<ul>
+	<li>Rapid prototyping with very short cycles;</li>
+	<li>Continuous delivery of usable software;</li>
+	<li>Encourages daily cooperation between business people and developers;</li>
+	<li>Welcomes changing requirements, even in late development.</li>
+</ul><br>
+Waterfall methodologies are more appropriate for critical and complex systems with very high quality requirements.<br>
+<br>
+Involving adoption of technology-based solutions.<br>
+<br>
+Network effects -> the benefits that each user gets, increase with the total number of users.<br>
+Moore's law -> increasing processing power per dollar.<br>
+<br>
+Distributed IS: software and/or data is distributed over various computers, which
+<ul>
+	<li>supports movements WITHIN the firm, NOT BETWEEN the firm and the customers;</li>
+	<li>both central computer and client computer can have software and data.</li>
+</ul><br>
+Per-to-per: commonly used for multimedia/data sharing, where each computer talks to the other computers directly.<br>
+Server-cliet: client nodes can run the software and request some data/services to the server when needed.<br>
+<br>
+<h3>Distributed Infraestructure</h3>
+Built on top of Telecommunication Networks and Computer Networks.<br>
+<br>
+Standards:
+<ul>
+	<li>Required in both wired and wireless networks;</li>
+	<li>May address different levels;</li>
+	<li>Crucial when different manufactures build products that must interoperate with each other.</li>
+</ul><br>
+LAN: Local Area Networks<br>
+WAN: Wide Area Networks<br>
+&#10149; Include LANs through appropriate networking gear (routers).
+ISP: Internet Service Providers<br>
+<h3>Cloud</h3>
+Associated with distributing, computing and storage capacity over various locations accessible through the internet.<br>
+<ul>
+	<li>Private Cloud: all the resources are used and owned by the same company.</li>
+	<li>Public Cloud: one company sells service based on the resources to others (which use the resources). And allows dynamic allocation of resources.</li>
+</ul><br>
+Virtualization: set of tools and techniques that support the simulation of "virtul computers" based on the real physical computers.<br>
+<br>
+Benefits of Private Clouds:
+<ul>
+	<li>Load balancing;</li>
+	<li>Redundancy;</li>
+	<li>Standardization/Commoditization of the hardware.</li>
+</ul><br>
+Public and Private Clouds se the same basic "building blocks":
+<ul>
+	<li>Several computer centers;</li>
+	<li>Software based virtualization tools;</li>
+	<li>Tools for dynamic allocation of resources.</li>
+</ul><br>
+Benefits of Public Clouds:
+<ul>
+	<li>More sophisticated tools;</li>
+	<li>"Billing" capacity: pay per use.</li>
+</ul><br>
+On demand computing: allows to use only the resources needed at any point in time. You pay just for the resources you use.<br>
+<br>
+Main types or levels of cloud computing services:
+<ul>
+	<li>Infraestructure as a service</li>
+	<li>Software as a service</li>
+</ul><br>
+Centralized Information System: all the software and data of an IS reside in a central computer.<br>
+<br>
+Software tools (ex: spreedsheet): programs that can manipulate any type of data in any structure.<br>
+<br>
+<h3>Data and MIS</h3>
+<ul>
+	<li>Data and its structure are a key componet of MIS;</li>
+	<li>A MIS is designed to support the information requirements and flows of business processes;</li>
+	<li>The data and its processing are defined during the MIS design.</li>
+</ul>
+Key components of MISs: data structure and programs.<br>
+<br>
+Data<br>
+<ul>
+	<li>Used to refer to unprocessed, out-of-context set of numbers or text elements;</li>
+	<li>Is the IS raw material;</li>
+	<li>Differs from the processing of data.</li>
+</ul>
+* Once data has been processed and turned into information, it takes on context and structure. It becomes useful information, on which business decisions can be used.<br>
+<br>
+Database: data + structure + definition + organization<br>
+<br>
+<h3>Database Management System (DBMS)</h3>
+Set of software programs specialized in managing databases.<br>
+<br>
+Data modeling:
+<ul>
+	<li>Process to logically structure or organize the data;</li>
+	<li>The resulting structure is referred as data model.</li>
+</ul>
+Hierarchical models:
+<ul>
+	<li>Simple and efficient;</li>
+	<li>Inflexible;</li>
+	<li>There is a single path to a given data element.</li>
+</ul>
+Relational models:
+<ul>
+	<li>Data is organized in tables;</li>
+	<li>Flexibility;</li>
+	<li>Each column contains the value of a given attribute for the individual represented in that row.</li>
+</ul>
+Database must store:
+<ul>
+	<li>Values;</li>
+	<li>Structure: relationships and definition of data.</li>
+</ul>
+Foreign keys: relationships among tables.<br>
+<br>
+Database Schema: is the data model described in the formal language of a DBMS.<br>
+&#10149; key component of a MIS together with its application progress.<br>
+<br>
+Redundancy: when the same piece of data (or attribute) is stored in more than one place.<br>
+<br>
+Inconsistency: when a attribute is stored in two different tables and have different information.
+<ul>
+	<li>Different MISs might contain inconsistent data;</li>
+	<li>A given MIS might contain inconsistencies within its own database.</li>
+</ul>
+Normalization: its process leads to databases without redundancy.<br>
+<br>
+DBMS:
+<ul>
+	<li>Doesn't need to know the details of the stockroom;</li>
+	<li>Doesn't sets up a queue when there are several requests at the same time;</li>
+	<li>Doesn't validates and doesn't logs the requests;</li>
+	<li>Simplifies the development of the specialized application programs;</li>
+	<li>Doesn't need to worry about how the data is stored;</li>
+	<li>Carries out all the data management related tasks.</li>
+</ul>
+<br>
+Data transactions<br>
+IS must guarantee:
+<ul>
+	<li>All operations within a transaction are succesfully completed, or if something fails, all previous operations are cancelled;</li>
+	<li>If the DBMS, for whatever reason, doesn't get a valid "commit" from the application programs, it will automatically "roll back".</li>
+</ul>
+SQL: Structure Query Language<br>
+&#10149; Common DBMS language through which data can be defined, manipulated and queried.<br>
+<br>
+Big Data Analytics: refers to the process of collecting, organizing and analyzing these "Big Data" sets to identify hidden patterns, previously unknown correlations, costumer preferences, market trends and other insights that can lead to better informed business decisions.<br>
+<br>
+ERP: Enterprise Resource Planning
+<ul>
+	<li>Integrated IS: encompasses a number of specialized modules (corporate functions);</li>
+	<li>Each module share the same data and database;</li>
+	<li>It can impose some constraints on how things are done.</li>
+</ul>
+Business Process: collection of related activities or tasks that produce a specific service or product, and thus create value for a costumer (internal or external).<br>
+&#10149; The tasks are grouped together because they are related and because they typically belong to a sequence.<br>
+<br>
+Business Functions: encompasses all the tasks that are similar and therefore require the same skills or knowledge.<br>
+<br>
+Business Transactions: too simple/small to be considered a process, it is the decoposition of business processes.<br>
+&#10149; Individual business transaction: each individual entity or object that goes through a business process.<br>
+<br>
+Lifecycle of a business transaction: series of activities that make up the business process it must undergo.
+<ul>
+	<li>Closed transactions: lifecycle completed</li>
+	<li>Open transactions: lifecycle not completed</li>
+</ul>
+Since business processes involve several business functions, data/information must flow from one business function to others. ERPs reduce this flow because the ERP's database is integrated with the modules of various business functions.<br>
+<br>
+Each ERP module operate almost independently from the rest of the modules, except when they share a common database and DMS.
+<ul>
+	<li>Allows each module to be developed, installed and evolved semi-independently from the other modules, avoinding complexity;</li>
+	<li>It also allows companies to install only some modules or to install them in several stages.</li>
+</ul>
+Sharing a database among several modules: all modules in a given ERP installation must use the same DBMS.
+<ul>
+	<li>The logical structure or data model of database must cater for the needs of all ERP modules;</li>
+	<li>All ERP modules must be consistent with the logical structure of the database.</li>
+</ul>
+ERP's data module must encompass all the tables, attributes and relationships that any of the ERP modules might require; even if at that point in time, these specific tables are empty.<br>
+<br>
+Development of the modules:
+<ul>
+	<li>Can not be developed as fully independent projects;</li>
+	<li>Each module must comply with the data-model of the common database.</li>
+</ul>
+Implementation of the ERP:
+<ul>
+	<li>Customer has to select modules that comply with database design;</li>
+	<li>All modules have to use the same DBMS.</li>
+</ul><br>
+<h3>ERP x Traditional MISs</h3>
+PROS:
+<ul>
+	<li>Support the integrated business processes encompassing multiple functions - eliminates redundancy and inconsistency;</li>
+	<li>Modularity: customers companies can choose which modules to install and might opt for a staged or phased approach.</li>
+</ul>
+CONS:
+<ul>
+	<li>Complexity;</li>
+	<li>Limited choice and lock-in: "hostage" of the ERP provider.</li>
+</ul>
+"Best of Breed" approaches involve selecting the best individual solution for each of the company's needs.<br>
+<br>
+Sometimes the company will adapt the ERP, or sometimes its processes. It the company adapts its processes, it does not necessarily have to adapt all of them, just those that are different from those implicit in the ERP. And it may adapt its processes to a "to be" state which is not the same as that initially implicit in the ERP.<br>
+<br>
+Implicit Business Process Design: orchestrates how activities are carried out in a company through MIS (specially ERPs).<br>
+<br>
+<h3>Business Process Reengineering (BPR)</h3>
+Arguments for BPR:
+<ul>
+	<li>MIS might enable or make advisable different process designs;</li>
+	<li>Takes advantages of "best practices";</li>
+	<li>Avoids the costs and issues involved in adapting the ERP;</li>
+	<li>Unsuitability of current practices.</li>
+</ul>
+Adaptation of the implicit business process design:
+<ul>
+	<li>Reduce as much as possible the adaptation required - selection of an appropriate ERP package;</li>
+	<li>Requires an iterative approach, influenced by new options enable by ERP and best practices implicit in ERP.</li>
+</ul>
+Major ERPs are highly parameterized to built-in flexibility.<br>
+<br>
+Coding-based Customization: computer programming to add additional programs and/or to modify the existing ones.<br>
+&#10149; Can lead to substantial costs, delays, risks and maintenance issues.<br>
+<br>
+Modular approach: implementing initially just a subset of the modules we are planning to use.<br>
+Advantages:
+<ul>
+	<li>Risk reduction;</li>
+	<li>Spread over a longer period of time: effort cost, business disruption.</li>
+</ul>
+Disvantages:
+<ul>
+	<li>Requires intermediate setups: requires efforts, less-than-optimal support to the company.</li>
+</ul>
+Roll-out implentation: the system is implemented first in some locations the it is rolled-out gradually to the rest.<br>
+&#10149; Limited availability of support staff.<br>
+<br>
+Key challenges in ERP implementation projects:
+<ul>
+	<li>Selecting the appropriate ERP package;</li>
+	<li>Strinking balance between BPR and customization;</li>
+	<li>Preventing "customization creeping";</li>
+	<li>Avoid losing competitive advantages;</li>
+	<li>Overcoming business disruption;</li>
+	<li>Overcoming resistance to change;</li>
+	<li>Customization and post-implementation maintenance issues.</li>
+</ul><br>
+<h3>Transaction Processing System (TPS)</h3>
+Structured decisions:
+<ul>
+	<li>Alternatives predefined;</li>
+	<li>Logical decision process is clear;</li>
+	<li>The information is well specified;</li>
+	<li>Very frequent (repetitive);</li>
+	<li>Operational in nature;</li>
+	<li>Typically taken by operational personnel.</li>
+</ul>
+Unstructured decisions:
+<ul>
+	<li>Alternatives not specified in advance;</li>
+	<li>Logical decision process is not predefined;</li>
+	<li>The information is not predetermined;</li>
+	<li>Typically one-off (each one is unique);</li>
+	<li>Tactical or strategic in nature;</li>
+	<li>Typically taken by managers (potentially supported by consultants or other highly qualified technical personnel).</li>
+</ul><br>
+DSS: Decision Support System<br>
+EIS: Executive Information System<br>
+<br>
+TPS:
+<ul>
+	<li>Data structure is designed in advance by their developers;</li>
+	<li>Data content is internally generated through the use of the TPS, and exchanged among TPSs.</li>
+</ul><br>
+Data warehouses (DW): relevant data from the database of the various transactional systems is periodically extracted and loaded into this DW.<br>
+&#10149; Main challenge: integration of the different data models.
+</div>
+{% endblock %}

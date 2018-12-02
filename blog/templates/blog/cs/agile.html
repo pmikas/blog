@@ -1,0 +1,133 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="post">
+<h1>Agile Software Development</h1>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;These notes are highly based on the course <a href="https://courses.edx.org/courses/course-v1:ETHx+ASD.1x+1T2018/course/">Agile Software Development</a> from edX, taught by Professor Bertrand Meyer.<br>
+<br>
+Content:<br>
+<ul>
+<li><a href="#manifesto">Agile Manifesto</a></li>
+<li><a href="#values">Agile Values</a></li>
+<li><a href="#principles">Agile Principles</a></li>
+</ul>
+<br>
+<br id="manifesto">
+<h3>Agile Manifesto</h3>
+<ul>
+&nbsp;&nbsp;&nbsp;&nbsp;INDIVIDUALS AND INTERACTIONS over processes and tools<br>
+&nbsp;&nbsp;&nbsp;&nbsp;WORKING SOFTWARE over comprehensive documentation<br>
+&nbsp;&nbsp;&nbsp;&nbsp;CUSTOMER COLABORATION over contract negociation<br>
+&nbsp;&nbsp;&nbsp;&nbsp;RESPONDING TO CHANGE over following a plan
+</ul><br>
+Main Agile methods:
+<ul>
+	<li>XP (Extreme Programming)</li>
+	<li>Lean</li>
+	<li>Crystal</li>
+	<li>Scrum</li>
+</ul><br>
+<ul>
+&nbsp;&nbsp;&nbsp;&nbsp;Practice: concrete and practical<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Principle: abstract, general, prescriptive<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Assertion: statement
+</ul><br>
+<br id="values">
+<h3>Agile Values</h3>
+<ol>
+	<li>New, reduced role for managers: managers do not assign tasks to project members - sef organized team</li>
+	<li>No "big upfront" steps: start producing work right away</li>
+	<li>Iterative development: development is step by sep, very progressive with short iterations</li>
+	<li>Limited, negotiated scope: limit waste</li>
+	<li>Focus on quality, achieved through testing</li>
+</ol><br>
+<br id="principles">
+<h3>Agile Principles</h3>
+Organizational:
+<ol>
+	<li>Put the customers at the center</li>
+	<li>Accept change</li>
+	<li>Let the team self-organize</li>
+	<li>Maintain a sustainable pace</li>
+	<li>Produce minimal software:</li>
+	<ul>
+		<li>Produce minimal functionality;</li>
+		<li>Produce only the product requested;</li>
+		<li>Develop only code and tests.</li>
+	</ul>
+</ol>
+Technical:
+<ol start="6">	
+	<li>Develop interatively:</li>
+	<ul>
+		<li>Produce frequent working iterations;</li>
+		<li>Freeze requirements during iterations.</li>
+	</ul>
+	<li>Treat tests as a key resource:</li>
+	<ul>
+		<li>Do not start any new development until all tests pass;</li>
+		<li>Test first.</li>
+	</ul>
+	<li>Express requirements through scenarios</li>
+</ol><br>
+Problems with Waterfall model:
+<ul>
+	<li>Late appearance of actual code;</li>
+	<li>Lack of support for requirements change - and more generally for extendibility and reusability;</li>
+	<li>Lack of support for maintenance activity;</li>
+	<li>Division of labor hampering Total Quality Management;</li>
+	<li>Impedance mismatches;</li>
+	<li>Highly synchronous model.</li>
+</ul><br>
+Seven wastes of software development (Lean view):
+<ul>
+	<li>Extra/unused features (overproduction);</li>
+	<li>Partially developed work not released (inventory);</li>
+	<li>Intemediate/unused artifacts (extra processing);</li>
+	<li>Seeking information (motion);</li>
+	<li>Escaped defects not caught by tests/reviews (defects);</li>
+	<li>Waiting (including customer waiting);</li>
+	<li>Handoffs (transportation).</li>
+</ul><br>
+Closed-Window Rule: during an iteration, no one can add functionality to the list of functionalities agreed upon in advance for that iteration.<br>
+<br>
+Standard form for user stories:<br>
+"As a &#10092;user_or_role&#10093; I want &#10092;bussiness_functionality&#10093; so that &#10092;business_justification&#10093;"<br>
+<br>
+Major application: validating requirements.<br>
+<br>
+In Scrum there is no "project manager" or "team leader".<br>
+<br>
+Self-organizing team:
+<ul>
+	<li>Cross-functional;</li>
+	<li>Has 7&plusmn;2 members;</li>
+	<li>Selects iteration goal and work results;</li>
+	<li>Organizes itself and its work;</li>
+	<li>Can do everything within guidelines to reach goal;</li>
+	<li>Demos work results to product owner.</li>
+</ul><br>
+Product Owner:
+<ul>
+	<li>Defines product features;</li>
+	<li>Decides on release dates;</li>
+	<li>Decides on release content;</li>
+	<li>Responsible for product profitability (ROI);</li>
+	<li>Prioritizes features according to market value;</li>
+	<li>Can change features and priority over 30 days;</li>
+	<li>Accepts or rejects work results.</li>
+</ul><br>
+Scrum Master:
+<ul>
+	<li>Ensures that the team is functional productive;</li>
+	<li>Enables cooperation accross all roles & functions;</li>
+	<li>Shields team from external interferences;</li>
+	<li>Enforces process: daily meeting, planning & review meeting;</li>
+	<li>Remove impediments*;</li>
+	<li>Normally, does not develop.</li>
+</ul>
+* Impediment: anything that affects the velocity (progress) of the team.
+</div>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="post">
+<h1>Django</h1>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here you can find some solutions for problems that I encounter when I was creating this blog.<br>
+<br>
+Creating a project:
+<ol>
+	<li>Create a folder for the website</li>
+	<li>Open the cmd prompt</li>
+	<li>Type: django-admin startproject 'project_name'</li>
+	<li>Go to the folder that was created: cd 'project_name'</li>
+	<li>Try to run the server, typing: python manage.py runserver</li>
+</ol><br>
+Sending code to Github at cmd:
+<ol>
+<li>git status</li>
+<li>git add --all</li>
+<li>git status</li>
+<li>git commit -m "Comments"</li>
+<li>git push</li>
+</ol><br>
+Update static files in PythonAnywhere<br>
+python3 manage.py collectstatic<br>
+<br>
+Whenever a new model is made:
+<ol>
+	<li>python manage.py makemigrations</li>
+	<li>python manage.py migrate</li>
+</ol><br>
+Git syncronization in PythonAnywhere
+<ol>
+	<li>git reset --hard HEAD</li>
+	<li>git merge upstream/master</li>
+	<li>git pull</li>
+</ol><br>
+"please enter a commit message to explain why this merge is necessary, especially if it merges an updated upstream into a topic branch."
+<ol>
+	<li>press i</li>
+	<li>write message</li>
+	<li>press esc</li>
+	<li>write :wq</li>
+	<li>press enter</li>
+</ol>
+</div>
+{% endblock %}

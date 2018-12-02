@@ -1,0 +1,29 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+<br><p>Some of the projects can be found at <a href="https://github.com/patriciasakugawa">Github</a>.</p>
+	<ul class="list-unstyled">
+	  <li class="media">
+	    <img class="align-self-center mr-3" src="{% static 'blog/img/ml.png' %}" alt="Machine Learning image">
+	    <div class="media-body">
+	      <h3 class="mt-0 mb-1"><a href="{% url 'ml' %}">Machine Learning</h3></a>
+	      The Machine Learning projects are composed of applications related to Linear Regression, Classification, Clustering, Neural Networks and Deep Learning models. Most of them are developed at Jupyter Notebook, using python language.<br>
+	    </div>
+	  </li>
+	  <li class="media my-4">
+	    <img class="align-self-center mr-3" src="{% static 'blog/img/surf.png' %}" alt="Surf image">
+	    <div class="media-body">
+	      <h3 class="mt-0 mb-1"><a href="{% url 'surf' %}">Surf</h3></a>
+	      Webapp development for wave forescast.
+	    </div>
+	  </li>
+	  <li class="media">
+	  	<img class="align-self-center mr-3" src="{% static 'blog/img/cheatsheet.png' %}" alt="Cheat sheet image">
+	    <div class="media-body">
+	    <h3 class="mt-0 mb-1"><a href="{% url 'cs' %}">My Cheat Sheet</h3></a>
+	      Compilation of my personnal notes from my Data Science and Machine Learning studies.<br>
+	    </div>
+	  </li>
+
+	</ul>
+{% endblock %}
