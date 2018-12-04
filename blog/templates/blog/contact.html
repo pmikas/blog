@@ -1,12 +1,23 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-	<br>
-    <p>If you have any question or want to give me a feedback or suggestions, feel free to send me a message through the form below. Otherwise you can also send an e-mail to patricia.sakugawa@gmail.com<br>
-    Thanks!</p>
-	<form method="POST" class="post-form">
-	    {% csrf_token %}
-	    {{ form }}
-	    <input type="submit" value="Submit">
-	</form>
+<br>
+<p>If you have any question or want to give me a feedback or suggestions, feel free to send me a message through the form below. Or, you can also send me a direct message to the e-mail: patricia.sakugawa@gmail.com<br>
+Thanks!</p>
+
+<form action="mail.php" method="POST">
+<fieldset>
+<input placeholder="Name" type="text" name="name" rows="1" style="width:100%" required></textarea>
+</fieldset>
+<fieldset>
+<textarea placeholder="E-mail" type="text" name="email" rows="1" style="width:100%" required></textarea>
+</fieldset>
+<fieldset>
+<textarea placeholder="Subject" type="text" name="subject" rows="1" style="width:100%"></textarea>
+</fieldset>
+<fieldset>
+<textarea  placeholder="Message" rows="6" style="width:100%" required></textarea><br />
+</fieldset>
+<input type="submit" value="Send">
+</form>
 {% endblock %}

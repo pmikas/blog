@@ -1,10 +1,23 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
 h1 a {
 	color: #FCA205;
 	font-family: 'Lobster';
 }
 
 body {
-    font-size: 14pt;
+	font-size: 14pt;
     font-family: "Calibri", sans-serif;
     color: #515151;
 }
@@ -17,9 +30,10 @@ body {
 .page-header {
     background-color: #009999;
     margin-top: 0;
-    padding-top: 20px;
+    padding-left: 200px;
+    padding-right: 0px;
+    padding-top: 10px;
     padding-bottom: 20px;
-    padding-left: 15%;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -32,12 +46,13 @@ body {
 .link_bar a, .link_bar a:link, .link_bar a:visited, .link_bar a:hover, .link_bar a:active {
     background-color: #009999;
     color: #ffffff;
-    font-size: 14pt;
+    font-size: 12pt;
     text-decoration: none;
 }
 
 .content {
-    margin-left: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 h1 {
@@ -52,7 +67,7 @@ h2 {
 
 h3, h4 {
 	font-family: "Calibri", sans-serif;
-	font-size: 16pt;
+	font-size: 14pt;
 	font-weight: bolder;
 }
 
@@ -76,7 +91,7 @@ h3 a {
 .top-menu, .top-menu:hover, .top-menu:visited {
     color: #ffffff;
     float: right;
-    font-size: 28pt;
+    font-size: 26pt;
     margin-right: 20px;
 }
 

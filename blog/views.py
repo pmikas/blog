@@ -1,10 +1,8 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponseRedirect
-#from PIL import Image
 
 # Create your views here.
 def home(request):
-	im = Image.objects
 	return render(request, 'blog/home.html')
 
 def pt_cv(request):
@@ -39,4 +37,6 @@ def django(request):
 
 def surf(request):
 	return render(request, 'blog/surf.html')
-# Create your views here.
+
+def contact(request):
+	return render(request, 'blog/contact.html')

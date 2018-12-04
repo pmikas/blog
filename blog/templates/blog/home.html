@@ -1,19 +1,13 @@
 {% extends 'blog/base.html' %}
 {% load static %}
 {% block content %}
+<br>
+<img align="left" src="{% static 'blog/img/profile.png' %}" alt="My image">
+<p>Hi!<br>
+My is name Patrícia. Welcome to my personal website!<br>
+Here you can find out a little about me and my projects.<br><br>
 
-    <div class="post">
-        <br>        
-        <li class="media">
-	   	<img class="mr-3" src="{% static 'blog/img/profile.png' %}" alt="My image">
-	    <div class="media-body">
-		    <p> Hi!<br>
-		    	My is name Patrícia. Welcome to my personal website!<br>
-		    	Here you can find out a little about me and my projects.<br><br>
-			    
-				I am graduated in Naval Architecture and Ocean Engineering, with MSc degree in Petroleum and Science Engineering.<br>
-				For the past few months I have been studying Data Science and Machine Learning, while trying out some projects. Feel free to take a look!</p>
-		</div>
-	</li>
-    </div>
+I am graduated in Naval Architecture and Ocean Engineering, with MSc degree in Petroleum and Science Engineering.<br>
+For the past few months I have been studying Data Science and Machine Learning, while trying out some projects. Feel free to take a look!</p>
+
 {% endblock %}

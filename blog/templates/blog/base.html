@@ -1,50 +1,45 @@
 {% load static %}
 <html>
-    <head>
-        <title>&#956;K.</title>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
-    </head>
-    <body>
-        <div class="page-header">
-            <h1><a href="/">Patrícia Mika Sakugawa</a></h1>
-            <div class="link_bar">
-                <a href="https://github.com/patriciasakugawa">Github</a>&nbsp;
-                <a href="https://www.linkedin.com/in/patriciamsakugawa/">LinkedIn</a>
-            </div>
-
+<head>
+    <title>&#956;K.</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+    <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+</head>
+<body>
+    <div class="page-header">
+        <h1><a href="/">Patrícia Mika Sakugawa</a></h1>
+        <div class="link_bar">
+            <a href="https://github.com/pmikas"><i style="font-size:24px" class="fab">&#xf09b;</i></a>&nbsp;&nbsp;
+            <a href="https://www.kaggle.com/patriciasakugawa"><i style='font-size:24px' class='fab'>&#xf5fa;</i></a>&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/patriciamsakugawa/"><i style="font-size:24px" class="fab">&#xf08c;</i></a>
         </div>
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                    <ul class="nav nav-tabs nav-justified">
-                      <li class="nav-item">
-                        <a class="nav-link" href="{% url 'home' %}">About me</a>
-                        </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Resume</a>
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">About me</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Resume</a>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="{% url 'pt_cv' %}">Português</a>
-                          <a class="dropdown-item" href="{% url 'en_cv' %}">English</a>
+                            <a class="dropdown-item" href="{% url 'pt_cv' %}">Português</a>
+                            <a class="dropdown-item" href="{% url 'en_cv' %}">English</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'projects' %}">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
-                    </li>
-                    </ul>
-                {% block content %}
-                {% endblock %}
-                </div>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'projects' %}">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+            {% block content %}
+            {% endblock %}
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
