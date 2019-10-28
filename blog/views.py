@@ -17,6 +17,15 @@ def projects(request):
 def ml(request):
 	return render(request, 'blog/ml.html')
 
+def reg_diamonds(request):
+	return render(request, 'blog/ml/diamonds.html')
+
+def clas_digit_reco(request):
+	return render(request, 'blog/ml/digit_reco.html')
+
+def clas_mushroom(request):
+	return render(request, 'blog/ml/mushroom.html')
+
 def cs(request):
 	return render(request, 'blog/cs.html')
 
